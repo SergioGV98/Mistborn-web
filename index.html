@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mistborn</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&
+        display=swap" rel="stylesheet">
+    </head>
+<body>
+    <main>
+        <!-- Header Start -->
+        <header>
+            <nav class="nav container">
+                <h2 class="nav_logo"><a href="#"><img src="images/mistborn-logo.png"></a></h2>
+
+                <ul class="menu_items">
+                    <img src="images/times.png" alt="timesicon" id="menu_toggle"/>
+                    <li><a href="#" class="nav_link" style="--i:1">Home</a></li>
+                    <li><a href="#" class="nav_link" style="--i:2">About</a></li>
+                    <li><a href="#" class="nav_link" style="--i:3">Project</a></li>
+                    <li><a href="#" class="nav_link contact-us" style="--i:4">Contact</a></li>
+                </ul>
+                <img src="images/bars.png" alt="bar icon" id="menu_toggle">
+            </nav>
+        </header>
+        <!-- Header End -->
+
+        <!-- Hero Start -->
+        <section class="hero">
+            <div class="background-video">
+                <video class="hero-video" autoplay="" muted="" loop="">
+                    <source src="video/MISTBORN MOVIE TRAILER.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="row container">
+                <div class="column">
+                    <p>Enter The</p>
+                    <h2>World <br />of Mistborn</h2>
+                    <div class="buttons">
+                        <button class="btn">Play Game</button>
+                        <button class="btn">Watch Trailer</button>
+                    </div>
+                    <img src="images/title-line.png">
+                </div>
+                <div class="column">
+
+                </div>
+            </div>
+        </section>
+        <!-- Hero End -->
+    </main>
+
+    <script>
+        const header = document.querySelector("header");
+        const menuToggler = document.querySelectorAll("#menu_toggle");
+
+        menuToggler.forEach(toggler => {
+            toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+        });
+    </script>
+</body>
+</html>>
