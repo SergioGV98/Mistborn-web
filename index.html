@@ -39,7 +39,7 @@
                     <p>Enter The</p>
                     <h2>World <br />of Mistborn</h2>
                     <div class="buttons">
-                        <button class="btn">Play Game</button>
+                        <button class="btn" id="play-game-btn" onclick="downloadGame()">Download</button>
                         <button class="btn">Watch Trailer</button>
                     </div>
                     <img src="images/title-line.png">
@@ -59,6 +59,10 @@
         menuToggler.forEach(toggler => {
             toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
         });
+
+        function downloadGame() {
+            window.open("https://drive.google.com/file/d/1UBfDCRfxAfuUPpBh3UfrgDgACVEquey1/view?usp=drive_link", "_blank");
+        }
     </script>
 </body>
-</html>>
+</html>
